@@ -27,10 +27,15 @@ const myStyle = {
 
 function CardApp( prop ) {
     /*
-    Reglas de JSX JavaScript XML 
-        - los componentes deben estar dentro de una etiqueta o componente contenedor. No se pueden poner componentes hermanos.
-    */
-    // los parentesis son opcionales pero obligatorios si quieres dar saltos de linea
+    Reglas de JSX( JavaScript XML  :
+     - Los componentes deben estar dentro de una etiqueta o componente
+       contenedor. NO se pueden poner componentes hermanos.
+     - No se renderizan los valores undefined o null
+     - No se renderizan valores booleanos
+     - No se renderiza NaN o Infinity
+     - No se renderiza funciones o objetos
+
+   */
     const myCard = (<div className="card-container">
         <a href= {prop.href} >
         <img src= {prop.src}/>
