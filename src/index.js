@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // los componentes empiezan con mayuscula
+  // debe haber un espacio para los self-closing
   <React.StrictMode>
     <App />
   </React.StrictMode>
